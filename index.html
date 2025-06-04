@@ -14,21 +14,24 @@
 <button id="addBtn">Add Task</button>
 
 <ul id="taskList">
-<!-- tasks go here -->
+
 </ul>
 
 <div class="filters">
-  <button onclick="filterTasks('all')">All</button>
-  <button onclick="filterTasks('completed')">Completed</button>
-  <button onclick="filterTasks('pending')">Pending</button>
+  <button onclick="setFilter('all')">All</button>
+  <button onclick="setFilter('completed')">Completed</button>
+  <button onclick="setFilter('pending')">Pending</button>
 </div>
+
+
 
 <div class="counts">
 <p>
-  total:<span id="total">0</span> | done:<span id="completed">0</span> | pending:<span id="pending">0</span>
+  Total:<span id="total">0</span> | Completed:<span id="completed">0</span> | pending:<span id="pending">0</span>
 </p>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
